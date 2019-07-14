@@ -50,11 +50,26 @@ public with sharing class SimpleConditional1
         // change this method to return a the largest of
         // the four numbers
 
+        //instantiate final value variable and set with the first value
+        Integer largestNumber = first;
+
         //add all inputs to list
-        //List<Integer> numberList = new List<Integer>(first,second,third,fourth);
+        List<Integer> numberList = new List<Integer>();
+        numberList.add(first);
+        numberList.add(second);
+        numberList.add(third);
+        numberList.add(fourth);
+
+        for (Integer eachNumber : numberList){
+            if (eachNumber > largestNumber){
+                largestNumber = eachNumber;
+            }
+        }
 
 
-        return null;
+
+
+        return largestNumber;
     }
 
     public static Integer Compare(Integer one, Integer other)
