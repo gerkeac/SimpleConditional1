@@ -12,7 +12,6 @@ public with sharing class SimpleConditional1
             equalCheck = true;
         }
 
-        //nothing else needed
         return equalCheck;
     }
 
