@@ -19,21 +19,41 @@ public with sharing class SimpleConditional1
     {
         // change this method to return true when
         // the number is greater than zero and false otherwise
-        return null;
-    }
+
+        Boolean valueCheck = false;
+
+        if (num > 0){
+            valueCheck = true;
+        }
+
+        return valueCheck;
+}
 
     public static Boolean IsEven(Integer num)
     {
         // change this method to return true when
         // the number is even and false when the
         // the number is odd
-        return null;
+
+        Boolean evenOddCheck = false;
+
+        if (math.mod(num,2) == 0) {
+            evenOddCheck = true;
+        }
+
+
+        return evenOddCheck;
     }
 
     public static Integer GetLargest(Integer first, Integer second, Integer third, Integer fourth)
     {
         // change this method to return a the largest of
         // the four numbers
+
+        //add all inputs to list
+        //List<Integer> numberList = new List<Integer>(first,second,third,fourth);
+
+
         return null;
     }
 
