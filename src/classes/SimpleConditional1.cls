@@ -66,9 +66,6 @@ public with sharing class SimpleConditional1
             }
         }
 
-
-
-
         return largestNumber;
     }
 
@@ -77,7 +74,18 @@ public with sharing class SimpleConditional1
         // change this method to return -1 when one is less than
         // other, +1 when one is greater than other, 0 if one
         // is the same as other
-        return null;
+        Integer finalValue;
+
+        if (one < other) {
+            finalValue = -1;
+        }
+        if (one > other) {
+            finalValue = 1;
+    }
+        if (one == other) {
+            finalValue = 0;
+        }
+        return finalValue;
     }
     
 }
